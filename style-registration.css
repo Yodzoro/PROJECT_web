@@ -1,0 +1,39 @@
+.content_registration{
+    position: relative;
+    padding-top: 50px;
+
+}
+.content_registration form{
+    width: 50%;
+    margin-left: 25%;
+}
+.registration_title{
+    text-align: center;
+}
+.registration_title strong{
+    display: block;
+    position: relative;
+    color: #e5cdcd;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 1.5;
+    text-shadow:
+            -0.0075em 0.0075em 0 #e8acb0,
+            0.005em 0.005em 0 #edb1b7,
+            0.01em 0.01em 0 #313030,
+            0.015em 0.015em 0 #f7bbc5,
+            0.02em 0.02em 0 #fcc0cc,
+            0.025em 0.025em 0 #313030,
+            0.03em 0.03em 0 #ffd4da,
+            0.035em 0.035em 0 #ffdde0;
+}
+.content_registration form button{
+    background-color: #455b37;
+    color: #e5cdcd;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+}

@@ -36,10 +36,11 @@ if (isset($_POST['login_username']) && isset($_POST['login_password'])) {
     }
     //id account successfully found, creat $_SESSION['username']
     $_SESSION['username'] = $login_username;
+
 }
 
 
-// Регистрация нового пользователя
+// SIGN UP
 if (isset($_POST['register_username']) && isset($_POST['register_password']) && isset($_POST['register_password_repeat'])) {
     $register_username = htmlspecialchars($_POST['register_username']);
     $register_password = htmlspecialchars($_POST['register_password']);

@@ -3,7 +3,7 @@ $vote2 = $_GET['vote2'];
 
 $filename2 = "result_ateez.json";
 if (!file_exists($filename2)) {
-    // если файл не существует, создаем новый
+    // if the file does not exist, create a new one
     $initial_data = array(
         "HONGJOONG" => 0,
         "SEONGHWA" => 0,
@@ -19,11 +19,11 @@ if (!file_exists($filename2)) {
     fclose($fp2);
 }
 
-// читаем данные из файла JSON
+// read data from json file
 $content2 = file_get_contents($filename2);
 $data2 = json_decode($content2, true);
 
-// увеличиваем количество голосов для выбранного участника
+// increase the number of votes for the selected member
 if ($vote2 == 0) {
     $data2["HONGJOONG"]++;
 }
@@ -49,7 +49,7 @@ if ($vote2 == 7) {
     $data2["JONGHO"]++;
 }
 
-// записываем обновленные данные в файл JSON
+// write updated data to JSON file
 $fp2 = fopen($filename2, "w");
 fwrite($fp2, json_encode($data2));
 fclose($fp2);

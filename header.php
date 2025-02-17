@@ -50,11 +50,11 @@ include 'form.php';
 
             <?php if (isset($_SESSION['username'])): ?>
                 <a href="user_page.php" class="log_in">
-                    <img src ="https://cdn.discordapp.com/attachments/1036722169666863165/1083047330502152233/1678288977243.png"  alt="User Page">
+                    <img src ="icon.png"  alt="User Page">
                 </a>
             <?php else: ?>
                 <button class="log_in" onclick="openLogIn()">
-                    <img src ="https://cdn.discordapp.com/attachments/1036722169666863165/1083047330502152233/1678288977243.png"  alt="Log in">
+                    <img src ="icon.png"  alt="Log in">
                 </button>
             <?php endif; ?>
         <div id="myWindow" type="button" class="window">
@@ -62,6 +62,7 @@ include 'form.php';
                 <span class="window-title"><?php echo $trad['registration']; ?></span>
                 <button class="close-button" onclick="closeLogIn()">&times;</button>
             </div>
+
 
             <div class="window-content">
                <form id="login_form" action="form.php" method="post">

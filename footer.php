@@ -8,7 +8,3 @@
 </body>
 </html>
 
-<?php
-//session_destroy(); //pour tester warning fenetre
-?>
-

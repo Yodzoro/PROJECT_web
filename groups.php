@@ -1,7 +1,7 @@
 <?php
 require_once "header.php";
 ?>
-<div class="content_groups">
+<div class="conten  t_groups">
     <div class="groups_title">
         <strong><?php echo $trad['groups']; ?></strong>
         <ul class="groups_list">

@@ -116,6 +116,7 @@ require_once "header.php";
                                 <li>UNIT: 3RACHA</li>
                                 <li>NATIONALITY: Korean</li>
                             </ul>
+
                         </div>
                     </div>
                 </div>
